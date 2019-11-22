@@ -145,6 +145,11 @@
   version "4.4.1-alpha.2"
   resolved "https://registry.yarnpkg.com/@graphile/lru/-/lru-4.4.1-alpha.2.tgz#4b5fc0c1203bb45da45fc65e62d2210c30643c2b"
 
+"@graphile/lru@4.4.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@graphile/lru/-/lru-4.4.5.tgz#a0fb6da9fe2002116bc61708f8d49a2a8ac2f206"
+  integrity sha512-nEjt0BVHXabsUuvkx7DIcY7ZibTJSJnxYM4WxO8WdMGPQHXDavkCprhPdStQ8JM1AQls+1ibCrXXkF49zY72PA==
+
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-24.9.0.tgz#79b1bc06fb74a8cfb01cbdedf945584b1b9707f0"
@@ -1369,6 +1374,22 @@ graphile-build-pg@4.4.4:
     pg-sql2 "4.4.3"
     postgres-interval "^1.2.0"
 
+graphile-build-pg@4.4.5:
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/graphile-build-pg/-/graphile-build-pg-4.4.5.tgz#6eeef87e43018629730f15da7ddf08a1d8a4d529"
+  integrity sha512-jQzEiAmj8IPNsxXB4KNbr7uXnvg1y34ch4Gp6i48wg1U2Z/d/nfPFyhxQkvxNio2CXySDg+5klt1rXucVB2+Rw==
+  dependencies:
+    "@graphile/lru" "4.4.5"
+    chalk "^2.4.2"
+    debug "^4.1.1"
+    graphile-build "4.4.5"
+    graphql-iso-date "^3.6.0"
+    jsonwebtoken "^8.5.1"
+    lodash ">=4 <5"
+    lru-cache ">=4 <5"
+    pg-sql2 "4.4.5"
+    postgres-interval "^1.2.0"
+
 graphile-build@4.4.4:
   version "4.4.4"
   resolved "https://registry.yarnpkg.com/graphile-build/-/graphile-build-4.4.4.tgz#f53ecfbb4537bee76ff6631d3fc1da1779948144"
@@ -1384,9 +1405,25 @@ graphile-build@4.4.4:
     pluralize "^7.0.0"
     semver "^6.0.0"
 
-graphile-utils@^4.4.4:
-  version "4.4.4"
-  resolved "https://registry.yarnpkg.com/graphile-utils/-/graphile-utils-4.4.4.tgz#4ce16b4db695cb7928cca9d676c1adb4b38740ad"
+graphile-build@4.4.5:
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/graphile-build/-/graphile-build-4.4.5.tgz#264071a8d24559951b8e62c61e8023e5de99aee6"
+  integrity sha512-DFYxnC+8qrQQ01JiMs4Yo7xZkvYgNPdCkia0oMDA9szlgj2BabVcVfYSTo2UL1pg5vb2XKbO/zmu6nl97SPClQ==
+  dependencies:
+    "@graphile/lru" "4.4.5"
+    chalk "^2.4.2"
+    debug "^4.1.1"
+    graphql-parse-resolve-info "4.4.5"
+    iterall "^1.2.2"
+    lodash ">=4 <5"
+    lru-cache "^5.0.0"
+    pluralize "^7.0.0"
+    semver "^6.0.0"
+
+graphile-utils@^4.5.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/graphile-utils/-/graphile-utils-4.5.2.tgz#c4938910c9df9acdff30388d2ab1b43236ed6335"
+  integrity sha512-UZrelrqxrEszClVE0MP1cc9+1vcpriK0BywIPneD1/4wu87kWmTbAGPO9orp4ePv9S+MHnqQuGwnDuKTYoLwVA==
   dependencies:
     debug "^4.1.1"
     graphql ">=0.9 <0.14 || ^14.0.2"
@@ -1400,6 +1437,13 @@ graphql-parse-resolve-info@4.4.3:
   resolved "https://registry.yarnpkg.com/graphql-parse-resolve-info/-/graphql-parse-resolve-info-4.4.3.tgz#3e8eda5ece51d07464249f2558a3d397f150bb9a"
   dependencies:
     "@types/graphql" "^14.2.0"
+    debug "^4.1.1"
+
+graphql-parse-resolve-info@4.4.5:
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/graphql-parse-resolve-info/-/graphql-parse-resolve-info-4.4.5.tgz#7f564ef80e22527c0ffdc7b0f98bb09258d8562a"
+  integrity sha512-KEjcDEK4zt+n8/MQL+d1kVQFTDUrn/PTlmQnO4rQ6l2kMXs3ZEMnMabxq5wnnwSAtGUaE8UnfFfcfGGIO5WfZQ==
+  dependencies:
     debug "^4.1.1"
 
 graphql@*, "graphql@>=0.9 <0.14 || ^14.0.2", "graphql@^0.6.0 || ^0.7.0 || ^0.8.0-b || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.2":
@@ -2757,6 +2801,15 @@ pg-sql2@4.4.3, pg-sql2@^4.4.1-alpha.2:
     "@types/pg" ">=6 <8"
     debug ">=3 <5"
 
+pg-sql2@4.4.5:
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/pg-sql2/-/pg-sql2-4.4.5.tgz#4e7699694eddd455c2a6218d03e011e63b1d0a6f"
+  integrity sha512-8qXACinootFhIv9JnpfFzXn79K7sSw+ASx6a2RRqrrh2MV8ElLUTQene+yZm0KjDY4BhSq4ruNGO+CkdLLVglg==
+  dependencies:
+    "@graphile/lru" "4.4.5"
+    "@types/pg" ">=6 <8"
+    debug ">=3 <5"
+
 pg-types@^2.1.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/pg-types/-/pg-types-2.2.0.tgz#2d0250d636454f7cfa3b6ae0382fdfa8063254a3"
@@ -2824,6 +2877,14 @@ postgraphile-core@4.4.4:
     "@types/graphql" "^14.2.0"
     graphile-build "4.4.4"
     graphile-build-pg "4.4.4"
+
+postgraphile-core@4.4.5:
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/postgraphile-core/-/postgraphile-core-4.4.5.tgz#dad01f5f290b45d104d1a662397a2307e110f00c"
+  integrity sha512-dnYBRnXUL/xjgYXEy2s18h1wQFX9ixbabv1K0KXN49MB58a8cy7flcdSBNHi1A8T0xSJJD6KRrAFOG4zeLw2QA==
+  dependencies:
+    graphile-build "4.4.5"
+    graphile-build-pg "4.4.5"
 
 postgraphile-plugin-connection-filter@^1.0.0:
   version "1.1.3"
